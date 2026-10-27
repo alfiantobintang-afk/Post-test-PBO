@@ -1,8 +1,8 @@
-# Sistem Top Up Game Online — Bintang Top Up
+# Sistem Top Up Game Online - Bintang Top Up
 
 ## 1. Deskripsi Program
 
-Sistem Top Up Game Online — Bintang Top Up merupakan program berbasis Python yang digunakan untuk mengelola data game, item top up, akun pengguna, dan transaksi pembelian item game.
+Sistem Top Up Game Online - Bintang Top Up merupakan program berbasis Python yang digunakan untuk mengelola data game, item top up, akun pengguna, dan transaksi pembelian item game.
 
 Program ini dibuat untuk memenuhi tugas Posttest Pemrograman Berorientasi Objek (OOP) dengan menerapkan konsep inheritance, relasi UML, abstraksi menggunakan Abstract Base Class (ABC), polimorfisme, duck typing, dan operator overloading.
 
@@ -131,19 +131,19 @@ Screenshot berikut harus disiapkan setelah program berhasil dijalankan.
 
 ### 8.1 Output Program Utama
 
-![Output program utama](docs/output-program.png)
+https://github.com/alfiantobintang-afk/Post-test-PBO/tree/main/POST-TEST/Post-Test-3/Output%20Program/8.1%20Program%20Utama
 
 Gambar 2. Output program yang menampilkan informasi game, item top up, akun, dan transaksi.
 
 ### 8.2 Bukti Pengujian Abstraksi
 
-![Bukti abstract class tidak dapat diinstansiasi](docs/output-abstraksi.png)
+https://github.com/alfiantobintang-afk/Post-test-PBO/blob/main/POST-TEST/Post-Test-3/Output%20Program/8.2%20Pengujian%20Abstraksi.png
 
 Gambar 3. Output pengujian yang menunjukkan abstract class tidak dapat diinstansiasi dan menghasilkan `TypeError`.
 
 ### 8.3 Bukti Pengujian Polimorfisme
 
-![Bukti polimorfisme](docs/output-polimorfisme.png)
+https://github.com/alfiantobintang-afk/Post-test-PBO/blob/main/POST-TEST/Post-Test-3/Output%20Program/8.3%20Pengujian%20Polimorfisme.png
 
 Gambar 4. Output pemanggilan method pada objek subclass berbeda, duck typing, dan operator overloading.
 
@@ -152,14 +152,16 @@ Gambar harus berupa screenshot asli dari hasil eksekusi program dan disimpan di 
 ## 9. Struktur Folder Proyek
 
 ```text
-Bintang-Top-Up/
-├── main.py
+Post-Test-3
+├── 2509106132_BintangAlfiantoFirdaus_PT_3.py
 ├── README.md
-└── docs/
-    ├── class-diagram.png
-    ├── output-program.png
-    ├── output-abstraksi.png
-    └── output-polimorfisme.png
+└── Output-Program
+    ├── 8.1-Program-Utama.png
+        └── 1.png
+        ├── 2.png
+        ├── 3.png
+    ├── 8.2-Pengujian-Abstraksi.png
+    └── 8.3-Pengujian-olimorfisme.png
 ```
 
 ## 10. Cara Menjalankan Program
@@ -183,14 +185,8 @@ py main.py
 
 ## 11. Kesimpulan
 
-Sistem Top Up Game Online — Bintang Top Up merupakan program pengelolaan game, akun, item top up, dan transaksi yang menerapkan konsep Pemrograman Berorientasi Objek menggunakan Python.
+Sistem Top Up Game Online - Bintang Top Up merupakan program pengelolaan game, akun, item top up, dan transaksi yang menerapkan konsep Pemrograman Berorientasi Objek menggunakan Python.
 
 Penerapan inheritance, relasi UML, abstraksi, encapsulation, dan polimorfisme membantu menghasilkan struktur program yang terorganisasi, mendukung penggunaan ulang kode, serta memudahkan pengembangan fitur pada masa mendatang.
 
 ---
-
-Nama Proyek: Sistem Top Up Game Online — Bintang Top Up
-
-Mata Kuliah: Pemrograman Berorientasi Objek
-
-Bahasa Pemrograman: Python
