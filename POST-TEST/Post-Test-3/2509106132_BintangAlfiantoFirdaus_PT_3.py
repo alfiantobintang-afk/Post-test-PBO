@@ -217,12 +217,24 @@ if __name__ == "__main__":
 
     akun = Akun("Bintang", "A001", "bintang@example.com", "rahasia123")
 
-    print("\n--- POLIMORFISME VIA PEWARISAN ---")
-    layanan = [item_digital, item_login]
-    for item in layanan:
-        item.jalankan()  # method konkret memanggil method subclass yang berbeda
-        print()
+    print("\n" + "=" * 58)
+    print("8.2 BUKTI PENGUJIAN ABSTRAKSI")
+    print("=" * 58)
 
+    print("\n--- PENGUJIAN ABSTRACT CLASS ---")
+    try:
+        LayananTopup("X", "Contoh", 1000, 1, game_mobile)
+    except TypeError as error:
+        print("Abstract class tidak dapat diinstansiasi.")
+        print("TypeError berhasil ditangkap.")
+        print("Pesan:", error)
+
+    print("\n--- IMPLEMENTASI SUBCLASS ---")
+    layanan = [item_digital, item_login]
+
+    for item in layanan:
+        item.jalankan()
+        print()
     print("--- RELASI AGREGASI ---")
     print(f"Item pada {game_mobile.nama_game}: {len(game_mobile.daftar_item)}")
     print(f"Item pada {game_pc.nama_game}: {len(game_pc.daftar_item)}")
@@ -231,13 +243,30 @@ if __name__ == "__main__":
     transaksi = Transaksi("T001", akun, game_mobile, item_digital)
     transaksi.tampilkan_transaksi()
 
+    print("\n" + "=" * 58)
+    print("8.3 BUKTI PENGUJIAN POLIMORFISME")
+    print("=" * 58)
+
+    print("\n--- POLIMORFISME VIA INHERITANCE ---")
+    daftar_game = [game_mobile, game_pc]
+
+    for game in daftar_game:
+        game.tampilkan_info()
+
+    print("\n--- POLIMORFISME VIA OVERRIDING ---")
+    daftar_layanan = [item_digital, item_login]
+
+    for item in daftar_layanan:
+        print(item.proses_topup())
+
     print("\n--- DUCK TYPING ---")
-    kirim_notifikasi(NotifikasiEmail(), "Pesanan T001 sedang diproses.")
-    kirim_notifikasi(NotifikasiSMS(), "Pesanan T001 sedang diproses.")
+    pesan = "Pesanan T001 sedang diproses."
+
+    kirim_notifikasi(NotifikasiEmail(), pesan)
+    kirim_notifikasi(NotifikasiSMS(), pesan)
 
     print("\n--- OPERATOR OVERLOADING: __str__ ---")
     print(item_digital)
-
     print("\n--- BUKTI ABSTRACT CLASS TIDAK BISA DIINSTANTIASI ---")
     try:
         LayananTopup("X", "Contoh", 1000, 1, game_mobile)
